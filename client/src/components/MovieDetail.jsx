@@ -7,9 +7,15 @@ class MovieDetail extends React.Component {
       return null;
     }
     return (
-      <h3>
-        {this.props.movie.name}
-      </h3>
+      <div>
+        <h3>
+          {this.props.movie.show_title}
+        </h3>
+        <p>
+          {this.props.movie.summary}
+        </p>
+        <img src={this.props.movie.poster}/>
+      </div>
     );
   }
 }
